@@ -1,27 +1,23 @@
 import React from 'react';
-import {
-    View,
-    Text, 
-    StyleSheet
-} from 'react-native';
+import { View, Text } from 'react-native';
 
 const Header = () => {
+    const { textStyle, viewStyle } = styles;
+
     return (
         <View style={viewStyle}>
             <Text style={textStyle}>To Do App</Text>
-        </View>
+        </View>    
     );
 };
 
-const styles = StyleSheet.create({
+const styles = {
     viewStyle: {
-        backgroundColor: '#F5FCFF',
+        backgroundColor: '#F8F8F8'
     },
     textStyle: {
-        fontSize: 20,
-        textAlign: 'center',
-        margin: 10
+        fontSize: 20
     }
-});
+}
 
 export default Header;
